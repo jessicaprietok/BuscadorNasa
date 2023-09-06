@@ -1,3 +1,28 @@
 main {
     min-height: calc(100vh - 160px);
   }
+
+/* Estilo personalizado para los contenedores */
+.result-container {
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+  height: auto;
+  max-height: 400px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Estilo para las imágenes dentro de los contenedores */
+.result-container img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  flex-grow: 1;
+}
+
+/* Estilo para el título y descripción */
+.result-container h2,
+.result-container p {
+  margin: 10px;
+}
